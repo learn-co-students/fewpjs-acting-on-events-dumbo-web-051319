@@ -53,3 +53,8 @@
   position: absolute;
   width: 9px;
 }
+h1, p {
+  text-align: center;
+  font-family: monospace;
+  color: teal;
+}
