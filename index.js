@@ -14,7 +14,7 @@ function moveDodgerLeft() {
   //we have to parse the current number
   var left = parseInt(leftNumbers, 10);
   //check to see if the dodger's left edge is not past the edge of the container
-  if (left > 0 ) {
+  if (left > -10 ) {
     //convert this back into a px string and move to the left by subtracting 1
     dodger.style.left = `${left - 10}px`;
   }
@@ -22,7 +22,7 @@ function moveDodgerLeft() {
 function moveDodgerRight() {
   var leftNumbers = dodger.style.left.replace("px", "");
   var left = parseInt(leftNumbers, 10);
-  if (left < 160) {
+  if (left < 170) {
     dodger.style.left = `${left + 10}px`;
   }
 }
